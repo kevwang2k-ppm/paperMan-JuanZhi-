@@ -1,0 +1,2 @@
+import{c as t}from"./client-D7E_t28a.js";const u={getQuestions(e){return t.get(`/batches/${e}/questions`)},updateQuestion(e,s){return t.put(`/questions/${e}/review`,s)},batchUpdateQuestions(e){return t.post("/questions/batch-review",{updates:e})},createManualBox(e){return t.post("/questions/manual",e)},createQuestion(e,s){return t.post(`/papers/${e}/questions`,s)},deleteQuestion(e){return t.delete(`/questions/${e}`)}};export{u as q};
+//# sourceMappingURL=question-CdrZvYW6.js.map

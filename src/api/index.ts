@@ -1,0 +1,11 @@
+// API 模块统一导出
+export { default as client } from './client'
+export { batchApi } from './batch'
+export { questionApi } from './question'
+export { studentApi } from './student'
+export { exportApi } from './export'
+export { paperApi } from './paper'
+export { configApi } from './config'
+export { correctionsApi } from './corrections'
+export { edgeDetectionApi } from './edgeDetection'
+export { userApi } from './user'

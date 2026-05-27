@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下载图标预览</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body { background: #1f2937; color: #fff; font-family: system-ui, -apple-system, sans-serif; padding: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; max-width: 800px; margin: 0 auto; }
+    .card { background: #374151; border-radius: 12px; padding: 20px; text-align: center; cursor: pointer; transition: transform .15s; }
+    .card:hover { transform: scale(1.05); background: #4b5563; }
+    .card i { font-size: 28px; color: #4ade80; margin-bottom: 10px; display: block; }
+    .card .name { font-size: 12px; color: #9ca3af; }
+    .card .label { font-size: 14px; margin-top: 4px; }
+    h1 { text-align: center; font-size: 18px; margin-bottom: 20px; }
+    .current { border: 2px solid #4ade80; }
+  </style>
+</head>
+<body>
+  <h1>下载图标候选 (点击可复制 class 名)</h1>
+  <div class="grid">
+    <div class="card current" onclick="copy(this)">
+      <i class="fas fa-circle-down"></i>
+      <div class="name">fa-circle-down</div>
+      <div class="label">圆形箭头（当前）</div>
+    </div>
+    <div class="card" onclick="copy(this)">
+      <i class="fas fa-download"></i>
+      <div class="name">fa-download</div>
+      <div class="label">经典下载</div>
+    </div>
+    <div class="card" onclick="copy(this)">
+      <i class="fas fa-file-arrow-down"></i>
+      <div class="name">fa-file-arrow-down</div>
+      <div class="label">文件+箭头</div>
+    </div>
+    <div class="card" onclick="copy(this)">
+      <i class="fas fa-cloud-arrow-down"></i>
+      <div class="name">fa-cloud-arrow-down</div>
+      <div class="label">云下载</div>
+    </div>
+    <div class="card" onclick="copy(this)">
+      <i class="fas fa-arrow-down-to-bracket"></i>
+      <div class="name">fa-arrow-down-to-bracket</div>
+      <div class="label">箭头入框</div>
+    </div>
+    <div class="card" onclick="copy(this)">
+      <i class="fas fa-floppy-disk"></i>
+      <div class="name">fa-floppy-disk</div>
+      <div class="label">保存磁盘</div>
+    </div>
+    <div class="card" onclick="copy(this)">
+      <i class="fas fa-file-pdf"></i>
+      <div class="name">fa-file-pdf</div>
+      <div class="label">PDF 文件</div>
+    </div>
+    <div class="card" onclick="copy(this)">
+      <i class="fas fa-circle-arrow-down"></i>
+      <div class="name">fa-circle-arrow-down</div>
+      <div class="label">实心圆箭头</div>
+    </div>
+  </div>
+  <script>
+    function copy(el) {
+      const text = el.querySelector('.name').textContent;
+      navigator.clipboard.writeText(text);
+      alert('已复制: ' + text);
+    }
+  </script>
+</body>
+</html>
