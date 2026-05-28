@@ -134,3 +134,6 @@ const baseUrl = import.meta.env.VITE_API_BASE_URL
 - [Vue 3 文档](https://vuejs.org/)
 - [Tailwind CSS 文档](https://tailwindcss.com/)
 - [项目设计文档](../Doc_reArch/web-fastlane/)
+
+## Contacs
+- If you are intereseted in this project dorp a message @ kevwang2k@outlook.com
