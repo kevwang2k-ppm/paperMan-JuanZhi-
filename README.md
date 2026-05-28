@@ -5,7 +5,7 @@
 PaperMan 移动端 Web 前端 - 使用 Vue 3 + TypeScript + Vite 构建。后端会调用AI接口完成试卷擦除和试题识别等功能。
 整套app部署在本地电脑上，确保所有的试卷副本都只保存在本地。
 目前公布前端所有代码并提供包含后端的preRelease版本。
-
+如果你对这个项目感兴趣，请联系 @ kevwang2k@outlook.com
 ## 🚀 快速开始
 
 ```bash
